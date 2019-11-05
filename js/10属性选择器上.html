@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* p[id]{
+				color: red;
+			} */
+			p[id=id3]{
+				color: blue;
+			}
+			p[class=bb]{
+				font-size: 30px;
+			}
+			
+			
+			input[type=email]{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			10、标签选择器
+			[attribute]：根据指定的属性名称找到对应的标签
+			[attribute=value]：根据指定的属性名称找到属性名=value对应的标签
+		 -->
+		 <p id="id1" class="bb">我是段落1</p>
+		 <p class="aa">我是段落2</p>
+		 <p id="id2" class="aa">我是段落3</p>
+		 <p id="id3" class="cc">我是段落4</p>
+		 <p class="bb">我是段落5</p>
+		 <p>
+			 <form action="">
+				姓名<input type="text" /><br /><br />
+				邮箱<input type="email" />
+			 </form>
+		 </p>
+		 
+	</body>
+</html>

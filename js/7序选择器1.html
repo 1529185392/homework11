@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* p:first-child{
+				color: red;
+			} */
+
+			/* p:first-of-type{
+				color: blue;
+			} */
+			/* p:last-child{
+				color: red;
+			} */
+			/* p:last-of-type{
+				color: red;
+			} */
+			/* p:nth-child(3){
+				color: red;
+			} */
+			/* p:nth-last-child(3) {
+				color: red;
+			} */
+
+			/* p:nth-last-of-type(3){
+				color: red;
+			} */
+			/* h3:only-child{
+				color: purple;
+			} */
+			/* h3:only-of-type{
+				color: purple;
+			} */
+			h3:only-of-type{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			9、序选择器是CSS3新增的功能
+			1、同级别
+				1-1选择器：first-child
+					选择同级别中第一个儿子，而且符合选择器条件
+				1-2选择器：last-child
+					选择同级别中最后一个儿子，而且符合选择器条件
+				1-3选择器：nth-child(n)
+					选择同级别中第n个儿子，而且符合选择器条件
+				1-4选择器：nth-last-child(n) *hX显示不出来
+					选择同级别中倒数第n个儿子，而且符合选择器条件
+				1-5选择器：only-child
+				选择只有一个子元素(独生子)的标签
+					
+			2、同类型
+				2-1选择器：first-of-type
+					选择同级别中同类型的第一个标签
+				2-2选择器：last-of-type
+					选择同级别中同类型的第后一个标签
+				2-3选择器：nth-of-type(n)
+					选择同级别中同类型的第n个标签
+				2-4选择器：nth-last-of-type(n)
+					选择同级别中同类型的倒数第n个标签
+		 		2-5选择器：only-of-type
+		 		选择只有一个类型元素的标签
+		 -->
+		<h1>我是标签1</h1>
+		<h3>我是标签2</h3>
+		<p>我是段落1</p>
+		<p>我是段落2</p>
+		<p>我是段落3</p>
+		<div>
+			<p>我是段落4</p>
+			<p>我是段落5</p>
+			<p>我是段落6</p>
+			<a href="#">我是超链接</a>
+			<p>我是段落7</p>
+		</div>
+		<div>
+			<p>我是段落8</p>
+			<p>我是段落9</p>
+			<p>我是段落10</p>
+			<a href="#">我是超链接</a>
+			<p>我是段落11</p>
+			<h3>我是标签3</h3>
+			<h3>我是标签5</h3>
+		</div>
+		<!--只有一个儿子-->
+		<div>
+			<h3>我是标签4</h3>
+		</div>
+	</body>
+</html>

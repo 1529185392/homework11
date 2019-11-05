@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			针对表格的数据于与分类
+			1表格标题信息
+			2表格表头信息
+			3表格主题信息
+			4表头页尾信息
+			<table>
+				<caption></caption>
+				<thead>
+					<th></th>
+					<th></th>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+			
+		-->
+		<!--
+			注意：
+			thead与tfoot的高度不会随height的改变而改变
+		-->
+		<table width="450" height="300" border="1">
+			<caption><h2>学生信息</h2></caption>
+			<thead>
+				<th>学号</th>
+				<th>姓名</th>
+				<th>分数</th>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>12345</td>
+					<td>张三</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>123555</td>
+					<td>李四</td>
+					<td>90</td>
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<td colspan="2">2</td>
+					<td>85</td>
+				</tr>
+				
+			</tfoot>		
+			
+		</table>
+	</body>
+</html>

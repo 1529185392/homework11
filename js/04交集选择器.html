@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p.p1 {
+				color: red;
+			}
+
+			p.p3 {
+				background: yellow;
+			}
+
+			.p2.p3 {
+				font-size: 30px;
+			}
+
+			.p1.p3 {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 6、交集选择器
+			所有选择器选到的标签中交集的标签
+			选择器之间没有任何连接符号，直接紧邻在一起
+		 -->
+		<h3>这是标题</h3>
+		<p class="p1 p2">这是段落1</p>
+		<p class="p2 p3">这是段落2</p>
+		<p class="p1 p2 p3">这是段落3</p>
+		<h3 class="p1 p3">这是标题</h3>
+
+
+	</body>
+</html>

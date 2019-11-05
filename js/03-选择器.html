@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.title{
+				color: white;
+			}
+			
+			/*4、后代选择符(包含选择符)
+				选择器之间以空格隔开
+			*/
+			.view1 .title{
+				background: red;
+			}
+			
+			.view2 .title{
+				background: blue;
+			}
+			/* 可以连接很多后代 */
+			ul li p{
+				color: red;
+				font-size: 30px;
+			}
+			
+			
+			
+			/*5、子元素选择器
+			直接选取子元素，
+			选择器之间以>连接
+			*/
+			.view3>p{
+				font-size: 30px;				
+			}
+			
+			/*.view3 的后代 p*/
+			.view3 p{
+				color: blue;
+			}
+						
+		</style>
+	</head>
+	
+	<body>
+		
+		<!--
+			张三(广东省深圳市)
+			张三(广东省广州市)
+			
+			
+			快递:
+				张三(收)
+				广东省深圳市 张三(收)
+		-->
+		
+		<div class="view1">
+			<!--背景红色,字体白色-->
+			<h3 class="title">HTML</h3>
+			<p>超文本标记语言</p>
+		</div>
+		
+		
+		<br />
+		<br />
+		<div class="view2">
+			<!--背景蓝色,字体白色-->
+			<h3 class="title">CSS</h3>
+			<p>层叠样式表</p>
+		</div>
+		
+		<!--后代与儿子的区别-->
+		<div class="view3">
+			<p>view3的儿子</p>
+			<div>
+				<p>view3的孙子</p>
+			</div>
+		</div>
+		
+		
+		<ul>
+			<li class="view3">
+				<p>这是ul的孙子</p>
+			</li>
+		</ul>		
+	</body>
+</html>
